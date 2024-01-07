@@ -10,13 +10,13 @@ const ContactForm = () => {
   const contacts = useSelector(getContacts);
   const dispatch = useDispatch();
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
     const resetForm = () => {
       setName('');
-      setPhone('');
+      setNumber('');
     };
     const isContact = contacts.find(
       el => el.name.toLowerCase() === name.toLowerCase()
@@ -27,7 +27,7 @@ const ContactForm = () => {
       resetForm();
       return;
     }
-    dispatch(addContact({ name, phone }));
+    dispatch(addContact({ name, number }));
 
     resetForm();
   };
@@ -40,7 +40,7 @@ const ContactForm = () => {
 
         break;
       case 'number':
-        setPhone(value);
+        setNumber(value);
 
         break;
       default:
@@ -65,7 +65,7 @@ const ContactForm = () => {
           type="tel"
           name="number"
           required
-          value={phone}
+          value={number}
           onChange={hendleChange}
         />
       </Label>

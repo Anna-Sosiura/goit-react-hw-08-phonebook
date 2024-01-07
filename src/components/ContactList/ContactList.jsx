@@ -15,7 +15,7 @@ const ContactList = () => {
             fontSize: 30,
           }}
         >
-          {contact.name}: {contact.phone}
+          {contact.name}: {contact.number}
           <DeleteBtn
             type="button"
             onClick={() => dispatch(deleteContact(contact.id))}

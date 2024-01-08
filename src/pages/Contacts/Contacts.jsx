@@ -3,12 +3,8 @@ import Filter from '../../components/Filter/Filter';
 import ContactList from '../../components/ContactList/ContactList';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContactsCount } from '../../redux/selectors';
-// import { Toaster } from 'react-hot-toast';
 import { useEffect } from 'react';
 import { getContacts } from '../../servise/contactsServise';
-// import { Circles } from 'react-loader-spinner';
-
-// import css from './Contacts.module.css';
 
 export default function App() {
   const dispatch = useDispatch();
@@ -35,7 +31,6 @@ export default function App() {
       {isLoading && !error && <p>Loading...</p>}
       {error && <p>An error occurred: {error}</p>}
       <ContactList />
-      {/* <Toaster position="top-right" /> */}
     </div>
   );
 }

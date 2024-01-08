@@ -4,7 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { PrivateRoute, RestrictedRoute } from '../components/Route/Route';
 
-// import { useAuth } from '../../hooks';
 import Home from '../pages/Home/Home';
 import Register from '../pages/Register/Register';
 import Login from '../pages/Login/Login';

@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { register } from '../../servise/userServise';
-// import { Button, TextField, Box } from '@mui/material';
+import { Button } from '@mui/material';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -60,24 +60,9 @@ export const RegisterForm = () => {
         autoComplete="off"
         size="small"
       ></input>
-      <button variant="contained" size="large" type="submit">
+      <Button variant="contained" color="success" type="submit">
         Register
-      </button>
+      </Button>
     </form>
-    // <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-    //   <label className={css.label}>
-    //     Username
-    //     <input type="text" name="name" />
-    //   </label>
-    //   <label className={css.label}>
-    //     Email
-    //     <input type="email" name="email" />
-    //   </label>
-    //   <label className={css.label}>
-    //     Password
-    //     <input type="password" name="password" />
-    //   </label>
-    //   <button type="submit">Register</button>
-    // </form>
   );
 };

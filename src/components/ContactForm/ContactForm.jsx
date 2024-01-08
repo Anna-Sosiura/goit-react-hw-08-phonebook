@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { Form, AddBtn, Label, Input } from './ContactForm.styled';
+import { Form, Label, Input } from './ContactForm.styled';
+// import { Form, AddBtn, Label, Input } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../servise/contactsServise';
 import { Notify } from 'notiflix';
+import Button from '@mui/material/Button';
 
 const getContacts = state => state.contacts.contactItems;
 
@@ -69,7 +71,9 @@ const ContactForm = () => {
           onChange={hendleChange}
         />
       </Label>
-      <AddBtn type="submit">Add contact</AddBtn>
+      <Button variant="contained" color="success" type="submit">
+        Add contact
+      </Button>
     </Form>
   );
 };

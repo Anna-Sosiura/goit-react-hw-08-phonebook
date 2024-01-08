@@ -4,8 +4,12 @@
   "private": true,
   "homepage": "https://anna-sosiura.github.io/goit-react-hw-08-phonebook/",
   "dependencies": {
+    "@chakra-ui/button": "^2.1.0",
+    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.3",
+    "@mui/material": "^5.15.3",
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",

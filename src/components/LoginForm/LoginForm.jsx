@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from '../../servise/userServise';
-// import { Button, TextField, Box } from '@mui/material';
+import { Button } from '@mui/material';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -50,21 +50,9 @@ export const LoginForm = () => {
         autoComplete="current-password"
         size="small"
       ></input>
-      <button variant="contained" size="large" type="submit">
+      <Button variant="contained" size="large" type="submit">
         Log In
-      </button>
+      </Button>
     </form>
-
-    // <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
-    //   <label className={css.label}>
-    //     Email
-    //     <input type="email" name="email" />
-    //   </label>
-    //   <label className={css.label}>
-    //     Password
-    //     <input type="password" name="password" />
-    //   </label>
-    //   <button type="submit">Log In</button>
-    // </form>
   );
 };

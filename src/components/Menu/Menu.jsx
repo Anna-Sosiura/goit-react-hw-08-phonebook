@@ -10,9 +10,6 @@ export const Menu = () => {
   return (
     <div
       style={{
-        // marginLeft: 250,
-        // position: 'absolute',
-        // right: 50,
         display: 'flex',
         gap: 30,
       }}
